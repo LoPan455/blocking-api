@@ -1,7 +1,7 @@
-package io.tjohander.fakeapistarter
+package io.tjohander.blockingapi
 
-import io.tjohander.fakeapistarter.model.Post
-import io.tjohander.fakeapistarter.service.PostService
+import io.tjohander.blockingapi.model.Post
+import io.tjohander.blockingapi.service.PostService
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
@@ -9,11 +9,11 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class FakeApiStarterApplication(
+class BlockingApiApplication(
     @Autowired private val postService: PostService
 ) : CommandLineRunner {
 
-    private val log = LoggerFactory.getLogger(FakeApiStarterApplication::class.java)
+    private val log = LoggerFactory.getLogger(BlockingApiApplication::class.java)
 
     override fun run(vararg args: String?) {
         log.info("Starting 'run'...")
@@ -23,5 +23,5 @@ class FakeApiStarterApplication(
 }
 
 fun main(args: Array<String>) {
-    SpringApplication.run(FakeApiStarterApplication::class.java, *args)
+    SpringApplication.run(BlockingApiApplication::class.java, *args)
 }

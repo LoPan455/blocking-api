@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter.model
+package io.tjohander.blockingapi.model
 
 data class Post(
     val userId: Int = 0,

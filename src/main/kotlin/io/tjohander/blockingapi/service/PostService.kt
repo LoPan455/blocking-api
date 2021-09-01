@@ -1,6 +1,6 @@
-package io.tjohander.fakeapistarter.service
+package io.tjohander.blockingapi.service
 
-import io.tjohander.fakeapistarter.model.Post
+import io.tjohander.blockingapi.model.Post
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpMethod

@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter.model
+package io.tjohander.blockingapi.model
 
 data class Comment(
     val postId: Int = 0,

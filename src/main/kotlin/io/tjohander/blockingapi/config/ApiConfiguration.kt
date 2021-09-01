@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter.config
+package io.tjohander.blockingapi.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.web.client.RestTemplateBuilder
